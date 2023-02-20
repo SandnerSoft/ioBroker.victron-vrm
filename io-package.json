@@ -1,7 +1,7 @@
 {
 	"common": {
 		"name": "victron-vrm",
-		"version": "0.0.1",
+		"version": "0.0.2",
 		"news": {
 			"0.0.1": {
 				"en": "initial release",
@@ -57,7 +57,7 @@
 		"extIcon": "https://raw.githubusercontent.com/SandnerSoft/ioBroker.victron-vrm/main/admin/victron-vrm.png",
 		"readme": "https://github.com/SandnerSoft/ioBroker.victron-vrm/blob/main/README.md",
 		"loglevel": "info",
-		"mode": "schedule",
+		"mode": "daemon",
 		"allowInit": true,
 		"type": "energy",
 		"compact": true,
@@ -77,6 +77,8 @@
 			}
 		]
 	},
+	"encryptedNative": ["password"],
+  	"protectedNative": ["password"],
 	"native": {
 		"email": "",
 		"password": ""
