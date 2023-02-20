@@ -1,0 +1,108 @@
+{
+	"common": {
+		"name": "victron-vrm",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Victron VRM",
+		"titleLang": {
+			"en": "Victron VRM",
+			"de": "Victron VRM",
+			"ru": "Victron VRM",
+			"pt": "Victron VRM",
+			"nl": "Victron VRM",
+			"fr": "Victron VRM",
+			"it": "Victron VRM",
+			"es": "Victron VRM",
+			"pl": "Victron VRM",
+			"zh-cn": "Victron VRM"
+		},
+		"desc": {
+			"en": "Connect to the Victron VRM Portal and get various informationen",
+			"de": "Connect to the Victron VRM Portal and get various informationen",
+			"ru": "Connect to the Victron VRM Portal and get various informationen",
+			"pt": "Connect to the Victron VRM Portal and get various informationen",
+			"nl": "Connect to the Victron VRM Portal and get various informationen",
+			"fr": "Connect to the Victron VRM Portal and get various informationen",
+			"it": "Connect to the Victron VRM Portal and get various informationen",
+			"es": "Connect to the Victron VRM Portal and get various informationen",
+			"pl": "Connect to the Victron VRM Portal and get various informationen",
+			"zh-cn": "Connect to the Victron VRM Portal and get various informationen"
+		},
+		"authors": [
+			"Denny Sandner <sandnersoft@googlemail.com>"
+		],
+		"keywords": [
+			"victron",
+			"solar",
+			"battery"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "victron-vrm.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/SandnerSoft/ioBroker.victron-vrm/main/admin/victron-vrm.png",
+		"readme": "https://github.com/SandnerSoft/ioBroker.victron-vrm/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"allowInit": true,
+		"type": "energy",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "materialize"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.0.0"
+			}
+		]
+	},
+	"native": {
+		"email": "",
+		"password": ""
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

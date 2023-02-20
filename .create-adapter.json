@@ -1,0 +1,55 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "victron-vrm",
+	"title": "Victron VRM",
+	"description": "Connect to the Victron VRM Portal and get various informationen",
+	"keywords": [
+		"victron",
+		"solar",
+		"battery"
+	],
+	"contributors": "",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "energy",
+	"startMode": "schedule",
+	"connectionType": "cloud",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"scheduleStartOnChange": "yes",
+	"adapterSettings": [
+		{
+			"key": "email",
+			"label": "email for login in VRM",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "password",
+			"inputType": "text",
+			"defaultValue": ""
+		}
+	],
+	"language": "TypeScript",
+	"nodeVersion": "16",
+	"adminUi": "html",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "single",
+	"es6class": "yes",
+	"tools": [
+		"ESLint"
+	],
+	"i18n": "words.js",
+	"authorName": "Denny Sandner",
+	"authorGithub": "SandnerSoft",
+	"authorEmail": "sandnersoft@googlemail.com",
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.3.0"
+}
