@@ -1,6 +1,6 @@
 {
   "name": "iobroker.victron-vrm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Connect to the Victron VRM Portal and get various informationen",
   "author": {
     "name": "Denny Sandner",
@@ -18,7 +18,7 @@
     "url": "https://github.com/SandnerSoft/ioBroker.victron-vrm.git"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 14"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.7"
